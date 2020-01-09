@@ -58,6 +58,11 @@ class _HomeDrawerState extends State<HomeDrawer> {
         labelName: 'About Us',
         icon: Icon(Icons.info),
       ),
+      DrawerList(
+        index: DrawerIndex.Schedule,
+        labelName: '預約',
+        icon: Icon(Icons.calendar_today),
+      ),
     ];
   }
 
@@ -294,6 +299,7 @@ enum DrawerIndex {
   About,
   Invite,
   Testing,
+  Schedule
 }
 
 class DrawerList {
